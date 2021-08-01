@@ -41,11 +41,6 @@
 
 
 <script>
-    var max;
-    max=0;
-    for (var i = 0; i < questions.length; i++) {
-        max += Math.abs(questions[i].effect.score)
-    } 
 	
     function getQueryVariable(variable)
     {
@@ -73,7 +68,6 @@
     document.getElementById("s3").innerHTML = s3;
     document.getElementById("s4").innerHTML = s4;
     document.getElementById("s5").innerHTML = s5;
-
     document.getElementById("count").innerHTML = count;    document.getElementById("all").innerHTML = questions.length;
 
 
