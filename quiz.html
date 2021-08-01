@@ -15,8 +15,6 @@
 <br>
 <p style="text-align:center; font-weight:bolder; font-size:25px; color:white;" id="question-number">Loading...</p>
 <br>
-<p style="text-align:center; font-weight:bolder; font-size:18px; color:white;" id="question-bj">Loading...</p>
-<br>
 <p style="font-size:25px", class="question" id="question-text"></p>
 <button class="button" onclick="next_question(1)" style="background-color: #272F61;">적극 동의함</button><br>
 <button class="button" onclick="next_question(2)" style="background-color: #5F73F0;">동의함</button><br>
@@ -46,8 +44,6 @@
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
         document.getElementById("question-number").innerHTML = "문제 " + (qn + 1) + "/" + (questions.length);
-        document.getElementById("question-bj").innerHTML =  "배점 : " + (questions[qn].effect.score) +"점";
-
     }
 
     function next_question(mult) {
